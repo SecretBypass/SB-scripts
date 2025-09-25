@@ -24,68 +24,68 @@ local main = Instance.new("Frame")
 main.Name = "MainFrame"
 main.AnchorPoint = Vector2.new(0.5, 0.5)
 main.Position = UDim2.new(0.5, 0, 0.5, 0)
-main.Size = UDim2.new(0, 250, 0, 200) -- já aparece pronto
+main.Size = UDim2.new(0, 320, 0, 250) -- AUMENTEI AQUI
 main.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
 main.BackgroundTransparency = 0.3
 main.BorderSizePixel = 0
 main.Parent = screenGui
 
 local mainCorner = Instance.new("UICorner", main)
-mainCorner.CornerRadius = UDim.new(0, 12)
+mainCorner.CornerRadius = UDim.new(0, 14)
 local mainStroke = Instance.new("UIStroke", main)
 mainStroke.Thickness = 2
 mainStroke.Color = Color3.fromRGB(0,0,0)
 
 -- título
 local title = Instance.new("TextLabel", main)
-title.Size = UDim2.new(1, 0, 0, 40)
+title.Size = UDim2.new(1, 0, 0, 50) -- aumentei altura
 title.Position = UDim2.new(0, 0, 0, 8)
 title.BackgroundTransparency = 1
 title.Text = "SECRET BYPASS"
 title.TextColor3 = Color3.fromRGB(0,0,0)
 title.Font = Enum.Font.GothamBold
-title.TextSize = 20
+title.TextSize = 24 -- maior
 title.TextXAlignment = Enum.TextXAlignment.Center
 title.TextYAlignment = Enum.TextYAlignment.Center
 
 -- caixa "Enter Key"
 local keyBox = Instance.new("TextBox", main)
-keyBox.Size = UDim2.new(0.8, 0, 0, 35)
+keyBox.Size = UDim2.new(0.8, 0, 0, 40) -- maior
 keyBox.Position = UDim2.new(0.1, 0, 0.3, 0)
 keyBox.PlaceholderText = "Enter Key"
 keyBox.Text = ""
 keyBox.ClearTextOnFocus = false
 keyBox.TextColor3 = Color3.fromRGB(0,0,0)
 keyBox.Font = Enum.Font.Gotham
-keyBox.TextSize = 16
+keyBox.TextSize = 18
 local keyCorner = Instance.new("UICorner", keyBox)
-keyCorner.CornerRadius = UDim.new(0, 8)
+keyCorner.CornerRadius = UDim.new(0, 10)
 
 -- botão "Acess Script"
 local accessBtn = Instance.new("TextButton", main)
-accessBtn.Size = UDim2.new(0.8, 0, 0, 35)
+accessBtn.Size = UDim2.new(0.8, 0, 0, 40)
 accessBtn.Position = UDim2.new(0.1, 0, 0.55, 0)
 accessBtn.Text = "Acess Script"
 accessBtn.TextColor3 = Color3.fromRGB(0,0,0)
 accessBtn.Font = Enum.Font.GothamBold
-accessBtn.TextSize = 16
+accessBtn.TextSize = 18
 accessBtn.BackgroundColor3 = Color3.fromRGB(255,255,255)
 accessBtn.BorderSizePixel = 0
 local accessCorner = Instance.new("UICorner", accessBtn)
-accessCorner.CornerRadius = UDim.new(0, 8)
+accessCorner.CornerRadius = UDim.new(0, 10)
 
 -- botão "Get Key"
 local getBtn = Instance.new("TextButton", main)
-getBtn.Size = UDim2.new(0.8, 0, 0, 35)
+getBtn.Size = UDim2.new(0.8, 0, 0, 40)
 getBtn.Position = UDim2.new(0.1, 0, 0.75, 0)
 getBtn.Text = "Get Key"
 getBtn.TextColor3 = Color3.fromRGB(255,255,255)
 getBtn.Font = Enum.Font.GothamBold
-getBtn.TextSize = 16
+getBtn.TextSize = 18
 getBtn.BackgroundColor3 = Color3.fromRGB(0,0,0)
 getBtn.BorderSizePixel = 0
 local getCorner = Instance.new("UICorner", getBtn)
-getCorner.CornerRadius = UDim.new(0, 8)
+getCorner.CornerRadius = UDim.new(0, 10)
 
 -- hover efeito para botões
 local function addHover(button, defaultColor, hoverColor)
